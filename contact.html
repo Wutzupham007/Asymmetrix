@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Asymmetrix</title>
+  <meta name="description" content="Get in touch with Asymmetrix. Join our co-investor network or reach out about investment opportunities.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">/</span>ASYMMETRI<span class="logo-x">X</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="about.html">About</a>
+        <a href="ventures.html">AX Ventures</a>
+        <a href="digital.html">AX Digital</a>
+        <a href="capital.html">AX Capital</a>
+        <a href="real-assets.html">AX Real Assets</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-label">Get in Touch</p>
+      <h1 class="page-title">Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT FORMS -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- CO-INVESTOR FORM -->
+        <div class="contact-form-card">
+          <h3>Interested in co-investing with us?</h3>
+          <p class="form-intro">
+            For accredited investors who would like to participate in future co-investment
+            opportunities, please join our network of investors.
+          </p>
+          <h4 class="form-heading">Join Our Network of Co-Investors.</h4>
+
+          <!--
+            FORM NOTE: This form uses action="#" as a placeholder.
+            To make it functional, either:
+            1. Point action to your form handler (e.g., Formspree, Netlify Forms)
+            2. Add JavaScript to handle submission via API
+          -->
+          <form action="#" method="POST" class="form">
+            <div class="form-group">
+              <label for="coinvest-email">Email*</label>
+              <input type="email" id="coinvest-email" name="email" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="coinvest-first">First Name*</label>
+                <input type="text" id="coinvest-first" name="first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="coinvest-last">Last Name*</label>
+                <input type="text" id="coinvest-last" name="last_name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="coinvest-phone">Phone Number</label>
+              <input type="tel" id="coinvest-phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="coinvest-company">Company Name</label>
+              <input type="text" id="coinvest-company" name="company">
+            </div>
+            <div class="form-group">
+              <label>Please indicate which type of co-investment opportunities you are interested in:*</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="early-stage-venture">
+                  <span>Early-stage Venture</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="digital-assets">
+                  <span>Digital Assets</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="private-equity">
+                  <span>Private Equity</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interests" value="private-real-estate">
+                  <span>Private Real Estate</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit</button>
+          </form>
+        </div>
+
+        <!-- GENERAL CONTACT FORM -->
+        <div class="contact-form-card">
+          <h3>Let's Connect.</h3>
+          <p class="form-intro">
+            To learn more about Asymmetrix or to share an investment opportunity
+            with us please complete the form.
+          </p>
+          <h4 class="form-heading">Let Us Hear From You.</h4>
+
+          <form action="#" method="POST" class="form">
+            <div class="form-group">
+              <label for="contact-email">Email*</label>
+              <input type="email" id="contact-email" name="email" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-first">First Name*</label>
+                <input type="text" id="contact-first" name="first_name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-last">Last Name*</label>
+                <input type="text" id="contact-last" name="last_name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="contact-company">Company Name</label>
+              <input type="text" id="contact-company" name="company">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message*</label>
+              <textarea id="contact-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo logo-footer">
+          <span class="logo-mark">/</span>ASYMMETRI<span class="logo-x">X</span>
+        </a>
+        <p class="footer-tagline">Alternative Capital. Asymmetric Potential.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Portfolios</h4>
+          <a href="ventures.html">AX Ventures</a>
+          <a href="digital.html">AX Digital</a>
+          <a href="capital.html">AX Capital</a>
+          <a href="real-assets.html">AX Real Assets</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Asymmetrix.co &mdash; All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
